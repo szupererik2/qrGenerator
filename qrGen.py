@@ -1,7 +1,8 @@
 import qrcode as qr
-import os
 
-img = qr.make("https://www.youtube.com/")
-type(img)
-img.save("GeneratedQR.png")
-os.startfile("GeneratedQR.png")
+def createQR(content):
+    img = qr.make(content)
+    type(img)
+    path = "GeneratedQR.png"
+    img.save(path)
+    return path
