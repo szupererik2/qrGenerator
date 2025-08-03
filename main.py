@@ -1,6 +1,7 @@
 import qrGen as qr
 import os
 import sys
+import colorGen as colG
 
 content = ""
 if len(sys.argv) > 2 :
@@ -18,5 +19,7 @@ else:
     # if content was not specifyed yet
     content = input("Enter the qr content : ")
 
-path = qr.createQR_Advanced(content, bgColor="black", fillColor="crimson")
+
+
+path = qr.createQR_Advanced(content, bgColor="black", fillColor=colG.generateColor())
 os.startfile(path)
