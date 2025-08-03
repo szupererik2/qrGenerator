@@ -2,7 +2,7 @@ import qrGen as qr
 import os
 import sys
 import colorGen as colG
-
+import colorPicking
 content = ""
 if len(sys.argv) > 2 :
     # if more than one Command Line Arguments are not used
@@ -19,6 +19,8 @@ else:
     # if content was not specifyed yet
     content = input("Enter the qr content : ")
 
-(mainColor, secCol) = colG.generateColors();
-path = qr.createQR_Advanced(content, bgColor=secCol, fillColor=mainColor)
-os.startfile(path)
+mainColor, secCol = colorPicking.choose_color("colors.json")
+print(mainColor)
+print(secCol)
+path = qr.createQR_Advanced(content, bgColor=tuple(secCol), fillColor=tuple(mainColor))
+#os.startfile(path)
