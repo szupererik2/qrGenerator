@@ -18,5 +18,5 @@ else:
     # if content was not specifyed yet
     content = input("Enter the qr content : ")
 
-path = qr.createQR_Advanced(content)
+path = qr.createQR_Advanced(content, bgColor="black", fillColor="crimson")
 os.startfile(path)
