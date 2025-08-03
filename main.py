@@ -19,7 +19,6 @@ else:
     # if content was not specifyed yet
     content = input("Enter the qr content : ")
 
-
-
-path = qr.createQR_Advanced(content, bgColor="black", fillColor=colG.generateColor())
+(mainColor, secCol) = colG.generateColors();
+path = qr.createQR_Advanced(content, bgColor=secCol, fillColor=mainColor)
 os.startfile(path)
