@@ -1,0 +1,53 @@
+[
+    {
+      "name": "Classic",
+      "primary": [0, 0, 0],
+      "complement": [255, 255, 255]
+    },
+    {
+      "name": "Inverted Classic",
+      "primary": [255, 255, 255],
+      "complement": [0, 0, 0]
+    },
+    {
+      "name": "Black & Gold",
+      "primary": [212, 175, 55],
+      "complement": [0, 0, 0]
+    },
+    {
+      "name": "Crimson Flame",
+      "primary": [220, 20, 60],
+      "complement": [25, 25, 112]
+    },
+    {
+      "name": "Crimson & Charcoal",
+      "primary": [220, 20, 60],
+      "complement": [54, 69, 79]
+    },
+    {
+      "name": "Deep Ocean",
+      "primary": [0, 105, 148],
+      "complement": [255, 160, 122]
+    },
+    {
+      "name": "Electric Purple",
+      "primary": [153, 50, 204],
+      "complement": [50, 204, 153]
+    },
+    {
+      "name": "Sunset Gold",
+      "primary": [255, 140, 0],
+      "complement": [75, 0, 130]
+    },
+    {
+      "name": "Forest Whisper",
+      "primary": [34, 139, 34],
+      "complement": [139, 34, 139]
+    },
+    {
+      "name": "Royal Blue & Coral",
+      "primary": [65, 105, 225],
+      "complement": [255, 127, 80]
+    }
+  ]
+  
