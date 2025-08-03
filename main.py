@@ -20,7 +20,5 @@ else:
     content = input("Enter the qr content : ")
 
 mainColor, secCol = colorPicking.choose_color("colors.json")
-print(mainColor)
-print(secCol)
 path = qr.createQR_Advanced(content, bgColor=tuple(secCol), fillColor=tuple(mainColor))
 os.startfile(path)
